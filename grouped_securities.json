@@ -1,0 +1,69 @@
+{
+  "6060.HK": {
+    "securityCusip": [
+      "Y989DF109"
+    ],
+    "securityName": [
+      "ZhongAn Online P&C Insurance C",
+      "ZhongAn Online P&C Insurance Co Ltd",
+      "ZHONGAN ONLINE P&C INSURAN-H"
+    ]
+  },
+  "1818.HK": {
+    "securityCusip": [
+      "Y988A6104"
+    ],
+    "securityName": [
+      "Zhaojin Mining Industry Co. Lt"
+    ]
+  },
+  "0405.HK": {
+    "securityCusip": [
+      "Y9865D109"
+    ],
+    "securityName": [
+      "Yeuxiu Real Estate"
+    ]
+  },
+  "TNK": {
+    "securityCusip": [
+      "Y8565N102"
+    ],
+    "securityName": [
+      "TEEKAY T"
+    ]
+  },
+  "2698.HK": {
+    "securityCusip": [
+      "Y95343102"
+    ],
+    "securityName": [
+      "WEIQIAO TEXTILE CO LTD SHS H"
+    ]
+  },
+  "WVE": {
+    "securityCusip": [
+      "Y95308105"
+    ],
+    "securityName": [
+      "CUMMINS INC",
+      "WAVE LIFE SCIEN",
+      "WAVE LIFE SCIENC",
+      "Wave Life Science",
+      "Wave Life Sciences",
+      "WAVE LIFE SCIENCES",
+      "WAVE LIFE SCIENCES F",
+      "WAVE LIFE SCIENCES L",
+      "WAVE LIFE SCIENCES LIMITED SHS",
+      "Wave Life Sciences Ltd",
+      "Wave Life Sciences Ltd.",
+      "WaVe Life Sciences Ltd",
+      "WaVe Life Sciences Ltd.",
+      "WAVE Life Sciences Ltd",
+      "WAVE Life Sciences Ltd.",
+      "WAVE LIFE SCIENCES LTD",
+      "WAVE LIFE SCIENCES LTD.",
+      "WAVE LIFE SCIENCES LTD CMN"
+    ]
+  }
+}
