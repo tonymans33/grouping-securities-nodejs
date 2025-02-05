@@ -8,13 +8,18 @@ function processCSV() {
 
    Papa.parse(csvFile, {
        header: true,
-       skipEmptyLines: true, // Skip empty lines
+       skipEmptyLines: true, 
        complete: (results) => {
            // Count valid rows (with symbols) first
            const validRows = results.data.filter(row => row.symbol);
            progressBar.start(validRows.length, 0);
            let progress = 0;
 
+           /**
+            * Process each row of the CSV and group the data by symbol.
+            * We use an object to store the grouped data where the key is the symbol
+            * and the value is another object containing the lists of CUSIPs and names.
+            */
            const groupedData = results.data.reduce((acc, curr) => {
                if (!curr.symbol) return acc;
 
@@ -22,6 +27,7 @@ function processCSV() {
                const cusip = curr.securityCusip;
                const name = curr.securityName.trim().replace(/\s+/g, ' ');
 
+               // If the symbol is not in the grouped data, add it with empty lists
                if (!acc[symbol]) {
                    acc[symbol] = {
                        securityCusip: [],
@@ -29,10 +35,12 @@ function processCSV() {
                    };
                }
 
+               // Add the CUSIP to the list if it's not already there
                if (!acc[symbol].securityCusip.includes(cusip)) {
                    acc[symbol].securityCusip.push(cusip);
                }
 
+               // Add the name to the list if it's not already there
                if (!acc[symbol].securityName.includes(name)) {
                    acc[symbol].securityName.push(name);
                }
